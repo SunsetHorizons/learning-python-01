@@ -7,15 +7,21 @@
 from datetime import date
 from datetime import time
 from datetime import datetime
+from datetime import timedelta 
 
 
 # TODO: construct a basic timedelta and print it
+print(timedelta(days=365, hours=5, minutes=1))
+
 
 
 # TODO: print today's date
+now=datetime.now()
+print("Today is", now)
 
 
 # TODO: print today's date one year from now
+print("one year from now it will be", str(now + timedelta(days=365)))
 
 
 # TODO: create a timedelta that uses more than one argument
